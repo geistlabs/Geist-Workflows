@@ -41,7 +41,7 @@ jobs:
 
           git add .
           git commit -m "[CIRCLE CI] ${TAG}"
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/geistlabs/Geist-Workflows.git
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/geistlabs/Geist-Helm.git
           git push
           git tag -f ${TAG}
           git push -f origin ${TAG}
